@@ -43,22 +43,34 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/b9b05b15-26f2-4d51-8a78-ed4ee2aee397)
 
 
 cat < file2
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/a915418f-7e0f-4001-b42a-c672ac5b7646)
+
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+
+![image](https://github.com/user-attachments/assets/ca759240-f135-4310-b014-b88aee0e2710)
+
+
 comm file1 file2
  ## OUTPUT
+
+
+![image](https://github.com/user-attachments/assets/0ed0b04a-82ad-4d8a-a9ac-0dedb6ea25e1)
 
  
 diff file1 file2
 ## OUTPUT
+
+
+![image](https://github.com/user-attachments/assets/8a51cd1d-7f9d-432d-bbac-4fcc3d5f7e82)
 
 
 #Filters
@@ -83,36 +95,45 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/d7a1c04d-274c-47e9-8ad8-a38b625a6ae5)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/3edb9e4f-ff02-44b1-8697-8cf1c0d1a446)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/d66ed7f3-f23e-487c-abb3-6615f6ffa987)
 
-cat < newfile 
+
+
+cat > newfile 
 ```
 Hello world
 hello world
 ^d
 ````
-cat > newfile 
-Hello world
-hello world
+cat < newfile 
+
+![image](https://github.com/user-attachments/assets/8be295b4-2504-4561-825c-95be073016f5)
+
+
  
 grep Hello newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/ee410126-a772-4602-b2ab-b333dc7588ce)
 
 
 grep hello newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/c68add6f-a681-41c0-b46b-22ce7c59a0aa)
 
 
 
@@ -120,29 +141,38 @@ grep -v hello newfile
 ## OUTPUT
 
 
+![image](https://github.com/user-attachments/assets/f3102d70-9e0c-46f8-934c-b5de52e425e1)
+
+
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/865546bc-7b79-4c7a-9e93-23a535446f40)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/d7491263-5dc0-4c8b-aaac-ab69d6bcba19)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/47268a0a-40ca-4ecd-adf2-f89b82097b0c)
 
 
 grep -w -n world newfile   
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/8c252894-f8e5-4f09-b2e6-f4370516da7f)
 
-cat < newfile 
+
+
+cat > newfile 
 ```
 Hello world
 hello world
@@ -152,7 +182,7 @@ Linux is best in this World
 ^d
 ```
 
-cat > newfile
+cat < newfile
 ```
 Hello world
 hello world
@@ -164,58 +194,79 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/cbe6cfe1-3407-464a-89af-8f887f3e5260)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/11b17f3c-74c2-43b0-863a-2d2557ff6a2b)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/54f0dbff-084c-4abb-909a-c20ab04f7184)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/fafe9706-5445-4ad2-89b8-cea096f9f37a)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/f04c6706-7ba9-404e-9c5a-aef767ceb70c)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/b5103b04-29f1-4df4-b815-8c7e57459bfe)
+
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/254b905b-f1af-48a6-bec8-7f6b575906a6)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/c0ab8e2b-c289-402d-b2b9-51755eab97c1)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
 
 
+![image](https://github.com/user-attachments/assets/3c6c61a6-1689-4280-a3c2-78e56a33632f)
+
+
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+
+![image](https://github.com/user-attachments/assets/a01caf8c-b108-4a07-ade8-ddc65e6339f6)
+
 
 
 egrep l{2} newfile
 ## OUTPUT
 
 
+![image](https://github.com/user-attachments/assets/5b1fde35-b9ba-4e19-a9ac-bf37800b9e0b)
+
+
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+
+![image](https://github.com/user-attachments/assets/c75123d0-c39d-48c5-b4de-a6274fe0ff63)
+
 
 
 cat > file23
